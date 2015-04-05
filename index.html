@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>TESTING</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBadoSzRQ7cpYAJ3sGYnD7omr9Tv2gRF90"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="reader.js"></script>
+  </head>
+    
+  <body>
+    <div id="container">
+      <!-- Aca las tabs en si -->
+      <div id="tab-container">
+        <ul id="tabs">
+          <li class="highlight"><a href="#tab1">General</a></li>
+          <li><a href="#tab2">Usuario y Amistades</a></li>
+        </ul>
+      </div>
+      
+      <!-- Aca el contenido de cada tab -->
+      <div id="content">
+        <div id="tab1" class="contenido">
+          <h2><center><u>Resumen del dataset</u> <a id="arrow">&#8679;</a></center></h2>
+          <p><ul id="datos">
+            <li> Usuarios: <b>11326</b></li>
+            <li> Ubicaciones: <b>187218</b></li>
+            <li>Check-ins: <b>2290997</b></li>
+            <li>Promedio de amigos por usuario: <b>8.32844781918</b></li>
+            <li>Promedio de check-ins/usuario: <b>202.277679675</b></li>
+            <li>Promedio de check-ins/lugar: <b>12.2370551977</b></li>
+          </ul></p>
+          <h2><center><u>Mapa</u></center></h2>
+          <div id="map-canvas"></div>
+        </div>
+        <div id="tab2" class="contenido">
+          <form id="filter">
+            <div>
+              <h2><u><center>Usuario</center></u></h2>
+              <input type="number" name="id" value="1">
+              <input type="checkbox" name="amigos" value="amigos" id="amigos"> Mostrar amigos en la busqueda
+              
+            </div>
+            <div>
+            <h2><u><center>Filtros</center></u></h2>
+            <h4>Entre fechas:</h4>
+            <input type="month" name="month1" value="2015-04">
+            <input type="month" name="month2" value="2015-08">
+            <input type="checkbox" name="date" value="date" id="date"> Aplicar filtro
+            </div>
+            <div>
+              <input id="buttx" type="submit" name="butt" value="Buscar">
+            </div>
+          </form>
+          <div id="map-canvas2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
