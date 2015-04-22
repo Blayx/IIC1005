@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Chat :D</title>
+	<script>
+	  //setInterval(function(){ alert('asd');}, 3000);
+	  //alert(document.getElementById("escritura").value);
+	  var txtFile = new XMLHttpRequest();
+	  txtFile.open("GET", "testing.txt", false);
+	  txtFile.send();
+	  var datos = txtFile.responseText;
+	</script>
+  </head>
+  <body>
+    <div id='main'>
+	  <div id='chat'></div>
+	  <form onSubmit='alert(datos); return false;'>
+	    <input type='text' id='escritura'>
+		<input type='submit'>
+	  </form>
+	</div>
+  </body>
+</html>
