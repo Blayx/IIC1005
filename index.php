@@ -1,17 +1,18 @@
 <html>
   <head>
     <title>Chat :D</title>
+	<script src='script.js'></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
-    <?php
-    echo "hey there";
-    ?>
     <div id='main'>
-	<div id='chat'></div>
-	  <form onSubmit='alert(datos); return false;'>
+	  <div id='chat'>
+	    <script>alert('asd');</script>
+	  </div>
+	  <form onSubmit='comentar(); return false;'>
 	    <input type='text' id='escritura'>
-	    <input type='submit'>
+		<input type='submit'>
 	  </form>
-    </div>
+	</div>
   </body>
 </html>
