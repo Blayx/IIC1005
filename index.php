@@ -7,7 +7,6 @@
   <body>
     <div id='main'>
 	  <div id='chat'>
-	    <script>alert('asd');</script>
 	  </div>
 	  <form onSubmit='comentar(); return false;'>
 	    <input type='text' id='escritura'>
