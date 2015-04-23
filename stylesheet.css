@@ -1,0 +1,25 @@
+#main{
+	height: 70%;
+	width: 50%;
+	background-color: #EAEAEA;
+	margin: 0 auto;
+	padding: 30px;
+}
+#chat{
+	height: 80%;
+	width: 90%;
+	background-color: white;
+	border: 1px solid;
+	margin: 0 auto;
+	overflow: auto;
+}
+#main form{
+	padding-top: 10px;
+	padding-left: 5%;
+}
+#main form input{
+	display:inline;
+}
+#escritura{
+	width: 80%;
+}
